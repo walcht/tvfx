@@ -21,7 +21,7 @@ has a __constant__ and __positive__ offset to the actual video time of the frame
     pip3 install -r requirements.txt
     ```
 
-4. Ready to go :)
+4. Ready to go 😃
 
 ## Usage
 
