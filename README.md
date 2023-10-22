@@ -8,8 +8,8 @@ is to make it extremely simple and fast to extract frames by their overlay times
 
 ## Assumptions
 
-1. It is assumed that: **for any frame in the timestamped video, the overlay timestamp
-has a constant and positive offset to the actual video time of the frame.***
+1. It is assumed that *for any frame in the timestamped video, the overlay timestamp
+has a __constant__ and __positive__ offset to the actual video time of the frame.*
 
 ## Installation
 
@@ -25,10 +25,29 @@ has a constant and positive offset to the actual video time of the frame.***
 
 ## Usage
 
-You can either use the GUI or the provided CLI. For help on CLI usage, type:
+You can either use the GUI (yet to be implemented) or the provided CLI. For help
+on CLI usage, type:
 
 ```Shell
 python3 tvfx.py --help
+```
+
+Which prints the following output:
+
+```Shell
+Usage: tvfx.py [OPTIONS] VIDEO_PATH START_TIMESTAMP TIMESTAMP
+
+  Timestamped Video Frame 'Xtractor by mapping timestamps to actual video
+  time.
+
+  VIDEO_PATH:         Absolute path or a URL to a timestamped video.
+  START_TIMESTAMP:    Timestamp at the initial frame (frame 0) of the video.
+  TIMESTAMP:          Timestamp at which the corresponding image is extracted.
+
+Options:
+  --save FILE     Save extracted image to provided path.
+  --show BOOLEAN  Whether to show the extracted image.  [default: False]
+  --help          Show this message and exit.
 ```
 
 ## License
