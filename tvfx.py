@@ -17,10 +17,11 @@ from PIL import Image
     "--show", help="Whether to show the extracted image.", type=click.BOOL, default=False, show_default=True
 )
 def run(video_path: str, start_timestamp: float, timestamp: float, save: str | None, show: bool) -> None:
-    """Timestamped Video Frame 'Xtractor by mapping timestamps to actual video time.
+    """tvfx: (T)imestamped (V)ideo (F)rame e(X)tractor by mapping overlaid timestamps
+    to actual video time.
 
     VIDEO_PATH:         Absolute path or a URL to a timestamped video.
-    START_TIMESTAMP:    Timestamp at the initial frame (frame 0) of the video.
+    START_TIMESTAMP:    Overlaid timestamp at initial frame of the video.
     TIMESTAMP:          Timestamp at which the corresponding image is extracted.
     """
     extracted_img = Image.open(
