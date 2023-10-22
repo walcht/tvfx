@@ -1,6 +1,7 @@
 # About
 
 ![cctv image with a timestamp overlay in seconds in bottom right](https://user-images.githubusercontent.com/89390465/277192842-820760f6-3ef8-423f-8566-8b0a91cb28ee.png)
+
 The image above showcases an example of a timestamped image. A timestamped video
 is a video where each frame has a timestamp overlay. The objective of this tool
 is to make it extremely simple and fast to extract frames by their overlay timestamps.
